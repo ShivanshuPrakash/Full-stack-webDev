@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex box</title>
+    <style>
+::selection{
+    color: aqua;
+    background-color: black;
+}
+.container{
+    border:3px solid black ;
+    background-color: antiquewhite;
+    display: flex;
+    height: 700px;
+    width: 1600px;
+      /* justify-content: center;  / ON THIS  */
+    /* justify-content: space-between; */
+    /* work according to main axis for more watch vedio at 12:16 */
+    align-items: center;
+    /* align-items: space-around; */
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    /* overflowing items came to next line  */
+    /* align-content: center; *//
+    /* THEIR IS NO JUSTIFY ITEM PROP IN FLEX BOX */
+    /* align-content: flex-start; */
+    /* flex-flow: row-reverse;   AS THE NAME SUGGEST  */
+    /* more than one line then content and if only one than item */
+    /* gap: 30px;
+    row gap: 45px;
+    coloumb gap: 55px */
+    /* ALSO WRRITEN AS */
+     /* gap: 30px 40px;  */
+}
+.item{
+    height: 42px;
+    width: 42px;
+    border: 2px solid black;
+    margin:5px ;
+    padding: 3px;
+    background-color: indianred;
+}
+order-1{
+    order:1;
+}order-2{
+    order:2;
+}order-3{
+    order:3;
+}order-4{
+    order:400;
+}
+/* more order-------------->last element-------------------> default order 0  */
+.item1{
+    /* flex-grow:2;*/
+    flex-shrink: 3;
+    align-self: flex-start;
+}
+    </style>
+</head>
+<body>
+    <h1>Flex box</h1>
+    <main>
+    <div class="container">
+        <div class=" item item1">S</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">V</div>
+        <div class="item">A</div>
+        <div class="item">N</div>
+        <div class="item">S</div>
+        <div class="item">H</div>
+        <div class="item">U</div>
+        
+        <div class="item sec order-1">P</div>
+        <div class="item sec order-2">R</div>
+        <div class="item sec order-3">A</div>
+        <div class="item sec order-4">K</div>
+        <div class="item sec">A</div>
+        <div class="item sec">S</div>
+        <!-- <div class="item">S</div> -->
+        <div class="item sec">H</div>
+        <!-- <div class="item">U</div> -->
+        <div class="item">S</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">V</div>
+        <div class="item">A</div>
+        <div class="item">N</div>
+        <div class="item item1">S</div>
+        <div class="item">H</div>
+        <div class="item">U</div>
+        
+    </div>
+    </main>
+</body>
+</html>

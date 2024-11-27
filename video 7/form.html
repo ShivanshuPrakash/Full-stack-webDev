@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms - let's learn it </title>
+</head>
+<body>
+    <h1>Html Forms</h1>
+    <h3>Student information </h3>
+    <form action="post">
+        <div>
+        <label for="username"> Enter your name</label>
+        <input type="text" id="username" name="username" placeholder="Enter Your shitty name">
+        </div>
+        <label for ="Age"> Enter your age </label>
+        <input type="number" id="Age" placeholder="Age">
+        <div>
+        <label for="Dob"> Enter Your Date of birth </label>
+        <input type="date" id="Dob" name="Date of birth" placeholder="Enter your date of birth">
+        </div>
+        <div>
+        <h>Select Your Gender </h>
+        <br>
+        <label for="Gender01">Male </label>
+        <input type="radio" id="Gender01" name="Gender" value="Male">
+        <label for="Gender02">female </label>
+        <input type="radio" id="Gender02" name="Gender" value="female">
+        <label for="Gender03">Transgender </label>
+        <input type="radio" id="Gender03" name="Gender" value="Transgender">
+        </div>
+        <div>
+            <label for="01">Enter your text here</label>
+            <br>
+            <textarea autofocus id="01" name="comment" rows="4" cols="50"></textarea>
+        </div>
+        <div>
+            <label for="02">Agree terms and condition</label>
+            <input type="checkbox" id="02" name="agree" value="yes">
+        </div>
+        <div>
+            <label for="03"> Select one of them  </label>
+            <select  id="03"name="items">
+             <option value="Phone">Iphone 15</option>
+             <option value="laptop">Mackbook 15</option>
+             <option value="tab">Samsung tab</option>
+             <option value="Other">Headphones</option>
+             </select>
+        </div>
+    </form>
+    <form action="/submit.php" method="post" > </form>
+    </body>
+</html>

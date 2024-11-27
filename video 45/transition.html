@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS TRANSITION</title>
+    <style>
+        .container{
+            background-color: aquamarine;
+            width: 50vw;
+            height: 40vh;
+        }
+        .box{
+            background-color: aqua;
+            width: 7vw;
+            height: 7vh;
+            border: 2px solid black;
+            display: flex;
+            align-items: center;
+            transition-property:transform,background-color,border-color,scale, hehe ;
+            transition-timing-function: cubic-bezier(1, -0.88, 1, 0.46);
+            transition-duration: 5s;
+            transition-delay: 1s;
+            /* SHORTCUT FOR ALL */
+            /* transition: all 3sec ease-out 1sec; */
+
+        }
+        .translate{
+            transform: translateX(10vw) translateY(10vh);
+            background-color: red;
+            border-color: aliceblue;
+            scale: 2;
+        }
+        .hehe{
+           transform: rotate(0.25turn);
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+
+    <div class="box translate hehe">
+    the epic transition
+    </div>
+   </div>
+    
+</body>
+</html>

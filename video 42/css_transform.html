@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS TRANSFORM</title>
+    <style>
+        .container{
+            border: 3px solid red;
+            height: 600px;
+            width: 1000px;
+            display: flex;
+            gap: 80px;
+        }
+        .box1{
+            background-color: aquamarine;
+            border: 2px solid black;
+            width: 80px;
+            height: 80px;
+            /* transform: rotate(40deg); 
+            YOU CAN ALSO WRITE IT AS */
+            /* transform: rotate(.25turn);
+             if u want to rotate it in particular axis syantax will be*/
+            transform: rotateX(45deg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box2{
+            background-color: rgb(94, 89, 231);
+            border: 2px solid black;
+            width: 80px;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: scale(1.6);
+            /* transform: scaleX(1.6);  for particular axis*/
+
+        }
+        .box3{
+            background-color: rgb(231, 153, 89);
+            border: 2px solid black;
+            width: 80px;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: skew(5deg);
+            /* YOU CAN DONE IT ONLY IN X AND Y AXIS BUT CANT DO IT IN Z AXIS 
+            SO REMEMBEFR THIS IMPORTANT THING  */
+        }
+        .box4{
+            background-color: rgb(231, 89, 108);
+            border: 2px solid black;
+            width: 80px;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: translate(100%);
+            /* can be done in all axis */
+        }
+        .box5{
+            background-color: rgb(238, 83, 194);
+            border: 2px solid black;
+            width: 80px;
+            height: 80px;
+            display: flex;
+            align-self:flex-end;
+            justify-content: center;
+            align-items: center;
+            transform:rotate(45deg)skew(30deg);
+        }
+        .box6{
+            background-color: rgb(215, 226, 73);
+            border: 2px solid black;
+            width: 80px;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: rotate(0.125turn);
+            transform-origin:0% 0%;
+            /* The transform-origin property allows you to change the pivot point for transformations 
+            such as rotation, scaling, and skewing. This point can be set using
+             keywords, percentages, or length units. */
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+    <div class="box1"> Box rotate</div>
+    <div class="box2"> Box scale</div>
+    <div class="box3">Box Skew</div>
+    <div class="box4">Box Translate</div>
+    <div class="box5">Multiple properties box</div>
+    <div class="box6">Transform origin</div>
+
+
+   </div>
+</body>
+</html>

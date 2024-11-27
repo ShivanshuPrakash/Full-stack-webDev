@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLOAT & CLEAR</title>
+    <style>
+        img{
+            float: right;
+        }
+        .head{
+            border: 3px solid black;
+        }
+        .box{
+            border: 1px solid blueviolet;
+            display: flow-root;
+            /* flow-root creates a new BFC, which is an isolated container that prevents elements inside it from affecting elements outside it and vice versa. */
+        }
+        .box2{
+            background-color: antiquewhite;
+            clear: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to My Website</h1>
+   <div class="head">
+    <img src="https://imageio.forbes.com/specials-images/imageserve/5d2392b234a5c400084abe23/Film-Robert-Downey-Jr/960x0.jpg?format=jpg&width=960" alt="Tony bhaiya" width="300px">
+    <div class="box">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat non provident id aliquam, obcaecati sed, reprehenderit laudantium soluta eligendi facere veniam quibusdam mollitia repellendus ullam recusandae fuga illo ipsa esse! Sed autem maiores ut.
+    </div>
+    <div class="box box2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, exercitationem rerum earum ipsam perferendis aspernatur maiores blanditiis fuga deleniti quos eveniet facilis dolorum aliquid quam facere soluta praesentium voluptate in atque asperiores possimus nostrum sequi similique quasi. Neque unde cum illo itaque dolor ex id.</div>
+    <div class="box">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis obcaecati vero expedita iste accusamus reiciendis doloribus autem repellendus quia aperiam, et rem iusto corporis laboriosam aliquam tempore id nobis. A quia repellendus molestias sapiente nostrum consectetur ullam in provident quo eum eius amet exercitationem optio nihil ab ut repellat tempora libero ratione, qui inventore error nesciunt. Ipsa vitae dignissimos illo consequatur ipsum qui neque modi quam.</div>
+    <div class="box"></div>
+   </div>
+</body>
+</html>

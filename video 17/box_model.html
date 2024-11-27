@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video number 18</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding:0;
+    }
+.box{
+    background-color: rgb(107, 187, 187);
+}
+.box1{
+    color: rgb(43, 61, 226);
+    padding: 20px;
+    margin: 20px;
+    border: 3px  solid rgb(183, 21, 228);
+    height: 200px;
+    /* this will increase the size of content only don't have any relation with padding and border,
+    this will increase the size of content only excluding padding and border */
+    box-sizing: border-box;
+    /* now when we add box-sizing this tells css that the height given is of all including 
+    main content + padding + border,
+    These will decrese the height of main content from 200 to some extent that all border + padder 
+    will have hight of 200   */
+
+    /* YOU CAN SEE ALL THESE BY INSEPECTING PAGE */
+}
+.box2{
+    color: deeppink;
+    background-color: burlywood;
+    margin: 20px;
+    padding: 30px;
+    border: 5px solid black;
+    height:100px;
+    box-sizing: border-box;
+    /* here the margin collapse will be 20px */
+}
+/* HERE COMES THE CONCEPT OF MARGIN COLLAPSE */
+/*                                ***********MARGIN COLLAPSE *****************                       */
+/* The top and bottom margins of blocks are sometimes combined (collapsed) 
+into a single margin whose size is the largest of the individual margins 
+(or just one of them, if they are equal), a behavior known as margin collapsing.*/
+</style>
+<body>
+    <h1>CSS Box Model - Margin, Padding & Borders</h1>
+<div class="box box1">
+i am box 
+ </div>
+ <div class="box box2">
+    i am  another shitty box 
+     </div>
+<div>
+    <pre>
+   
+    <h3>REFERENCE FOR MARGIN COLLAPSE</h3>
+    <img src="https://miro.medium.com/v2/resize:fit:1400/1*4pXEDWYOXYYvJGuTS32X7Q.png" width="800" alt="margin collapse">
+    </pre>
+</div>
+</body>
+</html>

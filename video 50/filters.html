@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Filters Example</title>
+    <style>
+        .filter-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .filter-container img {
+            width: 200px;
+            height: 200px;
+        }
+
+        .blur {
+            filter: blur(5px);
+        }
+
+        .brightness {
+            filter: brightness(1.5);
+        }
+
+        .contrast {
+            filter: contrast(200%);
+        }
+
+        .grayscale {
+            filter: grayscale(100%);
+        }
+
+        .invert {
+            filter: invert(100%);
+        }
+
+        .opacity {
+            filter: opacity(0.5);
+        }
+
+        .sepia {
+            filter: sepia(100%);
+        }
+
+        .saturate {
+            filter: saturate(2);
+        }
+
+        .hue-rotate {
+            filter: hue-rotate(90deg);
+        }
+
+        .drop-shadow {
+            filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.5));
+        }
+    </style>
+</head>
+<body>
+    <div class="filter-container">
+        <img src="https://pe-images.s3.amazonaws.com/basics/cc/image-size-resolution/resize-images-for-print/image-cropped-8x10.jpg" alt="Blurred" class="blur">
+        <img src="https://pe-images.s3.amazonaws.com/basics/cc/image-size-resolution/resize-images-for-print/image-cropped-8x10.jpg" alt="Brightened" class="brightness">
+        <img src="https://pe-images.s3.amazonaws.com/basics/cc/image-size-resolution/resize-images-for-print/image-cropped-8x10.jpg" alt="Contrasted" class="contrast">
+        <img src="https://pe-images.s3.amazonaws.com/basics/cc/image-size-resolution/resize-images-for-print/image-cropped-8x10.jpg" alt="Grayscale" class="grayscale">
+        <img src="https://pe-images.s3.amazonaws.com/basics/cc/image-size-resolution/resize-images-for-print/image-cropped-8x10.jpg" alt="Inverted" class="invert">
+        <img src="https://pe-images.s3.amazonaws.com/basics/cc/image-size-resolution/resize-images-for-print/image-cropped-8x10.jpg" alt="Opacity" class="opacity">
+        <img src="https://pe-images.s3.amazonaws.com/basics/cc/image-size-resolution/resize-images-for-print/image-cropped-8x10.jpg" alt="Sepia" class="sepia">
+        <img src="https://pe-images.s3.amazonaws.com/basics/cc/image-size-resolution/resize-images-for-print/image-cropped-8x10.jpg" alt="Saturated" class="saturate">
+        <img src="https://pe-images.s3.amazonaws.com/basics/cc/image-size-resolution/resize-images-for-print/image-cropped-8x10.jpg" alt="Hue Rotated" class="hue-rotate">
+        <img src="https://pe-images.s3.amazonaws.com/basics/cc/image-size-resolution/resize-images-for-print/image-cropped-8x10.jpg" alt="Drop Shadow" class="drop-shadow">
+        <img src="https://pe-images.s3.amazonaws.com/basics/cc/image-size-resolution/resize-images-for-print/image-cropped-8x10.jpg" alt="Normal" class="Normal">
+    </div>
+</body>
+</html>

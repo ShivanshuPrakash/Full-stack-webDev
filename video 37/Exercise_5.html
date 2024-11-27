@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 5</title>
+<style>
+ @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+ ::root{
+    --dark:rgb(136, 44, 4);
+ }      
+ /* style for ad */
+ .box{
+            border: 2px solid black;
+            border-radius: 25px;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            padding: 10px;
+            background-color: cornsilk;
+            
+
+        }
+        #image{
+            border-radius: 25px;
+            max-width: 100%; /* Prevent image from overflowing */
+            max-height: 100%; /* Prevent image from overflowing */
+
+         }
+   ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    
+    }
+    .element{
+        border: 2px solid black;
+        border-radius: 5px;
+        margin: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+h{
+    margin-top:0px;
+    font-family: 'open sans';
+    text-decoration: solid;
+    font-size:30px;
+}
+button{
+    border: 2px solid rgba(133, 154, 230, 0.893);
+    border-radius: 20px;
+    color: blue;
+    background-color: rgba(133, 154, 230, 0.893);
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+/* end of ad styling */
+/* nav bar */
+ body{
+            background-color: rgb(230, 233, 239);
+            
+        }
+        .navigation{
+            list-style: none;
+            /* display: flex; */
+            gap: 70px;
+            margin-left: 0px;
+            margin-top: 0px;
+            background-color: rgba(15, 9, 130, 0.826);
+            color: aliceblue;
+            border: 2px solid black;
+            height: 30px;
+            font-size: larger;
+            font-family: 'Roboto Slab';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1;
+            
+          }
+    
+        .boxxx{
+            border: 3px solid black;
+            border-radius: 30px;
+            height: 250px;
+            width: 1120px;
+            background-color: rgb(17, 175, 233);
+            text-align: center;
+            margin: auto;
+            margin-bottom: 100px;
+            margin-top: 100px;
+            font-size: 20px;
+            
+            
+            }
+        .boxxx::first-line{
+         background-color: yellow;
+        
+        }
+        
+        /*  styling for content */
+        main{
+            padding: 40px;
+            margin-left: 100px;
+            margin-right: 100px;
+            margin-top: 100px;
+            background-color: rgb(17, 175, 233);
+            border: 5px solid rgb(244, 241, 241);
+            border-radius: 20px;
+            display: flex;
+            
+        }
+        /* end of content */
+        /* styling of logo */
+        #logo{
+            border: 2px solid rgb(81, 34, 237);
+            border-radius: 50%;
+            position: fixed; /* Position absolutely within the header */
+            left: 95%; /* Distance from the left side */
+            top: 80%; /* Center vertically within the header */
+   
+             
+        }
+        /* end of logo styling */
+        /* footer part  */
+        footer{
+            background-color:rgb(136, 44, 4) ;
+            color: aliceblue;
+            border: 3px solid black;
+            height: 50px;
+            font-size: larger;
+            font-family: 'Roboto Slab';
+            text-align: center;
+            margin: 0px;
+            padding: 0px;
+        }
+        /* footer ending */
+        /* extra */
+        a:hover{
+            background-color: rgb(165, 246, 171);
+        }
+      ::selection{
+        background-color: black;
+        color: aqua;
+      }
+      .box1{
+        margin-left: 100px;
+        margin-right: 80px;
+      }
+      .box2{
+        margin-left: 80px;
+        margin-right:100px;
+      }
+
+      /*              <----------------------- end------------------->                               */
+</style>
+</head>
+
+
+<body>
+
+<header class="boxx">
+   <ul class="navigation">
+     <li><a style= "color:white; text-decoration: none;" href="##">🏡Home</a></li>
+     <li><a style= "color:white; text-decoration: none;" href="##">📑About</a></li>
+     <li><a  style= "color:white; text-decoration: none;" href="##">📩Services</a></li>
+     <li><a style= "color:white; text-decoration: none;"href="##">📞Contact us</a></li>
+   </ul>
+     <!-- logo  -->
+     <img  id="logo" src="logo.jpg" alt="logo" height="50px" width="60px">
+</header>
+<main class="content">
+    <!-- box 1 -->
+    <div class="box box1">
+        <img id="image" src="pic.jpg"   alt="landscape">
+            <ul class="nav">
+            
+                <li class="element"><a style="text-decoration: none;" href="##">Nature </a></li>
+                 <li class="element"> <a style="text-decoration: none;" href="##">Lake </a></li>   
+                
+            </ul>
+            <h>Lago Di Braies</h>
+           
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati incidunt nihil officia culpa minima quas quo similique iste rem, ducimus cupiditate ipsa doloremque sunt nisi alias maiores officiis, corrupti eius pariatur molestiae facere dolor! Ad!
+            </p>
+            <button ><a href="##" style="text-decoration: none; color: blue;">Read More </a> </button>
+      </div>
+      <!-- box 2 -->
+      <div class="box box2">
+        <img id="image" src="pic.jpg"   alt="landscape">
+            <ul class="nav">
+            
+                <li class="element"><a style="text-decoration: none;" href="##">Nature </a></li>
+                 <li class="element"> <a style="text-decoration: none;" href="##">Lake </a></li>   
+                
+            </ul>
+            <h>Lago Di Braies</h>
+           
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati incidunt nihil officia culpa minima quas quo similique iste rem, ducimus cupiditate ipsa doloremque sunt nisi alias maiores officiis, corrupti eius pariatur molestiae facere dolor! Ad!
+            </p>
+    <button ><a href="##" style="text-decoration: none; color: blue;">Read More </a> </button>
+      </div>
+     
+</main>
+<div class="boxxx">
+    <pre>
+         Creating my first project based on HTML and CSS was an exciting journey into web 
+         development. I crafted a simple webpage featuring a clean layout and engaging design.
+         With HTML, I structured the content using elements like headings, paragraphs, and images.
+         CSS allowed me to style the page with colors, fonts, and spacing, giving it a polished 
+         look. This project provided a solid foundation, enhancing my understanding of how websites
+         are built and styled, sparking my interest in further exploring web design.
+        </pre></div>
+       
+      
+<footer>
+    <p>&copy; All Rights Reserved || Shivanshu's Website || 29/06/2024 || Basic Project on HTML and CSS </p>
+</footer>
+
+</body>
+</html>

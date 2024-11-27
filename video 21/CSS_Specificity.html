@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video 21 </title>
+    <style>
+        h1{
+            color: brown;
+        }
+        .zero{
+            color: blueviolet;
+        }
+        .one{
+            color: blue;
+        }
+        .two{
+            color: rgb(224, 129, 27);
+        }
+
+        /* ATTRIBUTE SELECTOR */
+        [data-x=a]{
+            background-color: cornsilk;
+        }
+        /* """"""""""""""""""""""""CSS Specificity"""""""""""""""""""""""
+        Specificity is calculated using a point system:
+
+        Inline styles: 1000
+        IDs: 0100
+        Classes, attributes, and pseudo-classes: 0010
+        Elements and pseudo-elements: 0001
+        
+        IF SPECIFICITY IS EQUAL THE PRIORIOTY IS  GIVEN TO LAST POSITION LIKE IN ABOVE CASE OF COLOR*/
+    </style>
+</head>
+<body>
+    <div >
+    <h1 class="zero one two" data-x="a">CSS Specificity & Cascade </h1>
+    </div>
+    <p>This is a paragraph of text.</p>
+</body>
+</html>

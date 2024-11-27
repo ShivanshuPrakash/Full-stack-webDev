@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables </title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    } 
+    :root{
+               --color: rgb(225, 141, 15);
+               --seccolor: rgb(64, 241, 244);
+               /* GLOBAL VARIABLE */
+               /* css variables of anything can be formed */
+               --defpadding:2px;
+    }
+    ul{
+        display: flex;
+    }
+    ul li{
+        --border_color: rgb(244, 228, 49);
+        list-style: none;
+        /* padding: 20px; */
+        padding:var(--defpadding);
+        margin: auto;
+        border: 4px solid var(--border_color);
+        opacity: .7;
+    }
+    
+    .nav{
+        /* background-color: rgb(65, 65, 202); */
+        background-color: var(--color);
+       
+    }
+    .container{
+        /* background-color: rgb(219, 151, 51); */
+        background-color: var(--seccolor);
+        
+    }
+   ul li:first-child{
+    --color: rgb(233, 79, 79);
+   /* LOCAL VARIABLE */
+    background-color: var(--color);
+   }
+</style>
+<body>
+    <div class="heading">
+    <h1>CSS Variables </h1>
+    </div>
+   <div class="nav">
+<ul>
+    <li>Home</li>
+    <li>About</li>
+    <li>Contact</li>
+</ul>
+   </div>
+   <div class="container">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid nesciunt nobis<br>
+    reiciendis quidem hic libero dolore, tenetur debitis mollitia pariatur quaerat <br>
+    molestiae quo iusto placeat. Aut, perspiciatis at natus quam laboriosam iure <br>
+    distinctio possimus expedita accusantium? Accusantium id, delectus sed harum autem <br>
+    perferendis aliquid sunt.<br>
+   </div>
+</body>
+</html>

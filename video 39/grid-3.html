@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+.container{
+    background-color: darksalmon;
+    border: 3px solid black;
+    width: 80vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: [phela] 120px [doosra]100px[tesra];
+    /* grid-template-rows: 100px 100px 100px; */
+    grid-template-columns: 1fr 2fr 1fr;
+    row-gap: 10px;
+    column-gap: 40px;
+}
+.item{
+    background-color: cornflowerblue;
+    border: 3px solid black;
+    height: 55px;
+    width: 55px;
+    justify-items: center;
+    align-items: center;
+    place-content: center;
+
+    /* margin: 10px; */
+    /* padding: 10px; */
+   }
+   .item4{
+   align-self: start;
+   }
+ 
+   
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item item4">4</div>
+        <div class="item">5</div>
+
+    </div>
+    
+</body>
+</html>

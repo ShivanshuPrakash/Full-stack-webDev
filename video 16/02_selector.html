@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> video 35</title>
+    <style>
+.box:first-child{
+    background-color: mediumaquamarine;
+}
+.box:first-child::first-line{
+    background-color: yellow;
+}
+.box::first-letter{
+    color: peru;
+    font-size: 64px;
+    text-transform: uppercase;
+}
+.boxes *{
+    color: red;
+    border: 2px solid black;
+    margin: 7px;
+    padding: 3px;
+}
+.box:nth-child(even)
+{
+    background-color: rgb(244, 202, 95);
+}
+.box:nth-last-child(3){
+    background-color: rgb(222, 123, 177);
+}
+.boxes::before{
+    content: "These are some extra types in child and psedo selector ";
+     border: 2px solid black;
+     background-color: rgb(63, 81, 240);
+     color: aliceblue;
+    /* --bg_color:  rgb(119, 44, 239); */
+    /* background-color:var(--bg_color);  */
+    /*WANNA DO FORMATING ON THIS LINE */
+}
+    ::selection{
+        color: aqua;
+        background-color: black;
+    
+}
+.boxes::after{
+    content: "Sigma web development course";
+}
+input::placeholder{
+    color: rgb(244, 7, 7);
+    background-color: rgb(235, 224, 246);
+}
+
+    </style>
+</head>
+<body>
+    <h1>More on selector</h1>
+    <div class="boxes">
+        <div class="box">i am box number 1<br>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit earum, ea fugiat ab placeat expedita a sapiente, culpa, minus illum inventore. Error est illum provident vel repellendus aut quis, aliquam consequatur dolor fugiat cum. Aperiam atque, voluptates laborum aliquid sequi vero cumque necessitatibus, minima architecto non ea. Consequuntur sint, ullam cumque quod porro repellendus natus nobis id tempore omnis ad quos praesentium voluptas sequi eius sunt. Obcaecati id doloremque placeat, aliquid voluptas necessitatibus esse excepturi nemo consequuntur!</div>
+        <div class="box">i am box number 2</div>
+        <div class="box">i am box number 3</div>
+        <div class="box">i am box number 4</div>
+        <div class="box">i am box number 5</div>
+        <div>
+            <input type="text" placeholder="Type anything">
+        </div>
+
+    </div>
+</body>
+</html>

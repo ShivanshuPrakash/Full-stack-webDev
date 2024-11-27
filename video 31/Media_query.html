@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+
+        body{
+            background-color: blueviolet;
+        }
+        .box1{
+            background-color: aqua;
+            height:90px;
+            width: 90px;
+            margin: 20px;
+            padding: 100px;
+            border: 2px solid black;
+        }
+        .boxes{
+            display: flex;
+        }
+         
+        @media only screen and (max-width : 455px){body{
+            background-color: deepskyblue;
+        }
+        .boxes{
+            flex-direction: column;
+        }
+    }
+    @media screen and ( orientation  :landscape) {
+        body{
+            border: 1px solid black;
+        }
+        
+    }
+        /* @media not|only mediatype and (expression) CSS CODE ;*/
+    </style>
+</head>
+<body>
+    <h1>Welcome to My Website</h1>
+<div>
+    Hey i am blue body div
+</div>
+<div class="boxes">
+<div class="box1">
+Admission
+</div>
+<div class="box1">
+Result
+</div>
+<div class="box1">
+Parents meet
+</div>
+</div>
+</body>
+</html>

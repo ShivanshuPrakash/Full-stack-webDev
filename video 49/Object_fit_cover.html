@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css object fit and object cover</title>
+    <style>
+        .container{
+            background-color: azure;
+            border: 3px solid rgb(171, 46, 46) ;
+            height: 200px;
+            width: 300px;
+        }
+       
+        img{
+            height: 200px;
+            width: 300px;
+            object-fit: contain;
+            /* this says show me full image and leave the rest space */
+            object-fit: cover;
+            /* croping will be done to mantain aspect ratio for the given height and width cover whole box */
+            object-position: top bottom;
+            object-position: 5px 5px;
+            /* this tells dont cut this area because this our propert  */
+            /* object-fit: fill;
+            defautl property of object fit this allows or make bject crop without considering aspect ratio  */
+        }
+        /* setting an image as background image */
+        .background{
+            height: 800px;
+            width: 1000px;
+            border: 4px solid red;
+            background-image: url(https://previews.123rf.com/images/nuevoimg/nuevoimg2306/nuevoimg230603784/205797181-beautiful-peacock-feather-on-a-black-background-close-up.jpg);
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-clip: padding-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="https://cdn.pixabay.com/photo/2023/08/01/12/31/ai-generated-8162871_640.jpg" alt="Thor Chacha">
+        </div>
+        <div class="background">
+
+        </div>
+    </div>
+</body>
+</html>

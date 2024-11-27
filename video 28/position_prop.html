@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video28</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+         }
+.box{
+    height: 4333px;
+    padding: 3px;
+    margin: 3px;
+    width: 80vw;
+    border: 3px solid black;
+}
+.box1{
+    background-color: orange;
+    position: absolute;
+    top: 0px;
+    left: 3px;
+    }
+.box2{
+    background-color: rgb(156, 144, 144);
+    position: relative;
+    top:34px;
+    /* ya to top karle ye bottom same with left right  */
+    left: 56px;
+}
+.box3{
+    background-color: blueviolet;
+    position: fixed;
+    height: 100px;
+    bottom: 0px;
+    left: 8vw;
+    height: 111px;
+/*  */
+    }
+.box4{
+    background-color: red;
+    position: sticky;
+    top: 0px;
+    /* ye chipak gaya abb sab iske about scroll hoga */
+    /* QUIZ:   use this property whith parent when it is on absolute  */
+}
+.parent{
+    margin: 34px;
+    padding: 43px;
+    border: 3px solid black;
+    position: absolute;
+}
+.box5{
+    background-color: darkgreen;
+    height: 1000px;
+}
+    </style>
+</head>
+<body>
+<div class="parent">
+    <h1>CSS Position Property</h1>
+    <div class="box box1">ABSOLUTE</div>
+    <div class="box box2">RELATIVE</div>
+    <div class="box box3">FIXED</div>
+    <div class="box box4">STICKY</div>
+    <div class="box box5">TRIAL</div>
+
+</div>
+
+    
+    <!-- <pre>
+        STATIC POSITION.
+        relative position
+        Absolute position
+        Fixed position
+        Stickey position
+        and many more dear......................      
+    </pre> -->
+    <!-- <pre>
+        note :  in css the default property is static and we cant apply z index so we have
+        to chage the property from static to any (lets say relative) to apply z index 
+
+        now the question arises what is z index 
+        it is basicaLLY  like THE MS WORD PROPERTY BY which you can overlap or send the box behing 
+        any thing 
+
+        Note:
+            absolute papa wala banda ha ye phele apne div sa puchaga ga papa papa apki position 
+            static sa koi aur fixed ha to ma apke relative fix ho zau and agar papa nhi ha postion wala 
+            to ye html sa fixed ho zata ha  
+
+
+            EXCEPTION :
+                    absolute wala parent ma agar koi property fixed na ho tab bi uske trealtive
+                    fixed ho sakta bass usam transform , invert and perspective property lagi ho 
+    </pre> -->
+</body>
+</html>

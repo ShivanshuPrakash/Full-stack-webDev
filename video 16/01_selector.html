@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video number 17</title>
+    <style>
+        /*  ELEMENT SELECTOR
+        div{
+            background-color: blueviolet;
+        } */
+    
+        /* Class selector */
+    .red{
+        background-color: darkslateblue;
+    }
+    /* ID  SELECTOR */ 
+    #zero{
+        background-color: dodgerblue;
+    }
+    /* CHILD SELECTOR */ 
+    div>p{
+        background-color: indigo;
+        color: rgb(243, 235, 236);
+    }
+    /* child selector only works if p is direct child of div other wise it won't work  */
+
+    /* DESCENDENT SELECTOR */
+    div p {
+        background-color:darkorchid;
+    }
+    /* This will do  formate all paragraph  under all div   */
+
+    /* UNIVERSAL SELECTOR  */
+    *{
+        margin:0;
+        padding:0;
+    }
+    /* this will applicabe to all the elements of code  */
+
+    /* Pseudo Selector */
+a:hover{
+    background-color: lightseagreen;
+}
+a:visited{
+    color: brown;
+}
+a:link{
+    color: yellowgreen;
+}
+a:active{
+    background-color: fuchsia;
+}
+p:first-child{
+    background-color: rgb(146, 209, 248);
+   color: darkmagenta;
+}
+/* here all <p> who are 1st child of any tag will get this formatting */
+
+/* ATTRIBUTE SELECTOR */
+ [type="text"] {
+    border: 10px solid #e92b2b;
+}
+
+    </style>
+</head>
+<body>
+    <h1>CSS Selectors</h1>
+    <div>
+    This is a paragraph 1  
+    </div>
+    <div class="red">
+    This is a paragraph 2
+    </div>
+    <div id="zero">
+    This is a paragraph 3
+    </div>
+    <div>
+        <p>empty para to make main para 2nd chid so that psuedo selector will not interfere</p>
+        <p>paragraph 4 INSIDE DIV  formatting by descendant selector </p>  
+    </div>
+    <div>
+        <article>
+            <p>NOT THE DIRECT CHILD OF DIV </p>
+        </article>
+    </div>
+    <div>
+        HERE WE WILL USE PSEUDO SELECTOR
+        <a href="https://www.youtube.com/"> Go to Youtube</a>
+         
+        <a href="https://www.Google2.com/"> Go to Google</a>
+    </div>
+    <main>
+        <p>1ST CHILD OF MAIN and its formatting by pseudo Selector </p>  
+        <p>2ND CHILD OF MAIN </p>
+    </main>
+    <form>
+        <input type="text" placeholder="Enter your name">
+
+    </form>
+</body>
+</html>

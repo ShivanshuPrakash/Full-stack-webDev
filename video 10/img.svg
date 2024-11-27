@@ -1,0 +1,8 @@
+<svg width="200" height="200" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <polygon points="50,10 90,50 50,90 10,50" stroke="black" stroke-width="2" fill="red" />
+</svg>
+
+
+
+ <!-- xmlns="http://www.w3.org/2000/svg 
+ NAME SPACE DECLARATION IS ADDED HERE TO GRT IMAGE IN TAB BY LAP -->
